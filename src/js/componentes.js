@@ -37,7 +37,7 @@ txtInput.addEventListener('keyup', ( event ) => {
         todoList.agregarTodo( nuevoTodo );
         
         crearTodoHtml( nuevoTodo );
-        
+        todoList.contadorPendientes();
         txtInput.value = '';
     }
 });
