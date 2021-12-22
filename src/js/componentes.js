@@ -57,6 +57,7 @@ divTodoList.addEventListener('click', ( event ) => {
     } else if ( nombreEvento.includes('button') ){ // Borrar el todo
         
         todoList.eliminarTodo( todoId );
+        todoList.contadorPendientes();
         divTodoList.removeChild( todoElemento );
 
     }
